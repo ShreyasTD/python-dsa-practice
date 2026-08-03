@@ -1,0 +1,13 @@
+a1=int(input("Enter a 1st number: "))
+a2=int(input("Enter a 2nd number: "))
+
+print("Addition of two numbers is: ", a1+a2)
+print("Subtraction of two numbers is: ", a1-a2)
+print("Multiplication of two numbers is: ", a1*a2)
+print("Division of two numbers is: ", a1/a2)
+print("Modulus of two numbers is: ", a1%a2)
+print("Floor Division of two numbers is: ", a1//a2)
+print("Exponentiation of two numbers is: ", a1**a2)
+print("Bitwise AND of two numbers is: ", a1&a2)
+print("Bitwise OR of two numbers is: ", a1|a2)
+print("Bitwise XOR of two numbers is: ", a1^a2)
