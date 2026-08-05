@@ -63,4 +63,3 @@ for i in a[:]:
     if i%5==0:
         a.remove(i)
 print(a)
-"""
