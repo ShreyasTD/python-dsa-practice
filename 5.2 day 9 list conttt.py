@@ -1,4 +1,4 @@
-"""
+
 #1 avrage off sum
 a = list(map(int, input().split()))
 a=sum(a)/len(a)
@@ -69,7 +69,7 @@ for i in range(len(a)):
     if a[i]==num:
         print(i)
         break
-"""
+
 #6 Rotate the list by 1 position to the right
 a = list(map(int,input().split()))
 lastEle = a[len(a)-1]

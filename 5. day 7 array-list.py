@@ -1,5 +1,4 @@
 #1 using for loop
-
 a=[10,20,30,40,50,-40,7]
 for i in range(0,7):
  print(a[i], end=" ")

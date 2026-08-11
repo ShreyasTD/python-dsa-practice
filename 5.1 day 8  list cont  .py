@@ -1,5 +1,5 @@
 #finding index
-"""a=[10,20,30,40,50,60]
+a=[10,20,30,40,50,60]
 for i in range(len(a)):
     if a[i]==50:
         print(i)
@@ -75,7 +75,7 @@ print(minEle)
 a = list(map(int, input().split()))
 for i in range(len(a)-1, -1, -1):
     print(a[i], end=" ")
-"""
+
 #12 frequency of an element in a list
 a = list(map(int, input().split()))
 x=int(input("enter the number to find frequency: "))
@@ -84,11 +84,10 @@ for i in a:
     if i==x:
         count+=1
 print(count)
-"""
+
 #13 reverse the frequency of an element in a list
 a = list(map(int, input().split()))
 b=[]
 for i in range(len(a)-1, -1, -1):
     b.append(a[i])
 print(b)
-"""
