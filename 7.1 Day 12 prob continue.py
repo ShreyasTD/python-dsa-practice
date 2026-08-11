@@ -18,7 +18,7 @@ while left <right:
         left+=1
 
 print(count)
-"""
+
 #remove duplicates from an sorted arrray/list
 a=[1,1,2,2,3]
 res=[]
@@ -35,3 +35,24 @@ for fast in range(1,len(a)):
       slow+=1
       a[slow]=a[fast]
 print(a[:slow+1])
+
+#Move all zeros in a list at the end without changing the order of elements
+#Use Brute force first, later try optimizing the TC
+a=[1,0,3,40,9,0]
+nonZeroEle=[]
+for i in a:
+   if i!=0:
+        nonZeroEle.append(i)
+while len(nonZeroEle) <len(a):
+   nonZeroEle.append(0)
+print(nonZeroEle)
+"""
+#optimal approrch
+a=[1,2,0,9,8,0,12]
+slow=0
+for fast in range(len(a)):
+   if a[fast]!=0:
+     a[fast],a[slow]=a[slow],a[fast]
+      #swap a(left) a(right):
+     slow+=1
+print(a)
