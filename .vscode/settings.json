@@ -1,0 +1,14 @@
+{
+    "python.analysis.autoImportCompletions": false,
+    "python.analysis.languageServerMode": "default",
+    "python.analysis.typeCheckingMode": "standard",
+
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.inlineSuggest.enabled": true
+}
