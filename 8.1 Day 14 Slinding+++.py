@@ -10,3 +10,6 @@ for right in range(len(a)):
         subArraySum-=a[left]
         left+=1
 print(ans)
+
+#trap water
+#Given array of non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining
