@@ -1,4 +1,4 @@
-#Count the number of pairs in  a sorted list which sums to target.
+# 1Count the number of pairs in  a sorted list which sums to target.
 """a=[1,2,3,4,5,6,7,8,9,10]
 left =0
 right=len(a)-1
@@ -27,7 +27,7 @@ for i in a:
      res.append(i)
 print(res)
 
-#slove and fast pointer tech
+# 2 slove and fast pointer tech
 a=[1,2,2,2,3,3,4,5,5,6,6]
 slow=0
 for fast in range(1,len(a)):
@@ -36,7 +36,7 @@ for fast in range(1,len(a)):
       a[slow]=a[fast]
 print(a[:slow+1])
 
-#Move all zeros in a list at the end without changing the order of elements
+#3 Move all zeros in a list at the end without changing the order of elements
 #Use Brute force first, later try optimizing the TC
 a=[1,0,3,40,9,0]
 nonZeroEle=[]
@@ -47,7 +47,7 @@ while len(nonZeroEle) <len(a):
    nonZeroEle.append(0)
 print(nonZeroEle)
 """
-#optimal approrch
+# 4 optimal approrch slow and fast
 a=[1,2,0,9,8,0,12]
 slow=0
 for fast in range(len(a)):
