@@ -10,5 +10,6 @@
     },
 
     "editor.suggestOnTriggerCharacters": true,
-    "editor.inlineSuggest.enabled": true
+    "editor.inlineSuggest.enabled": true,
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
