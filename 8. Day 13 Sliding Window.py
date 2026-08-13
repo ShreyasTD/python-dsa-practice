@@ -1,5 +1,5 @@
 #find the sum of evry subarray of size k for brute force method
-"""a=[1,2,8,4,9,6]
+a=[1,2,8,4,9,6]
 k=3
 ans=0
 for i in range(len(a)-k+1):
@@ -21,7 +21,7 @@ for i in range(k,len(a)):
     windowSum=newWindowSum
     ans=max(ans,windowSum)
 print(ans)
-"""
+
 #Find maximum avg subarray value of size k brute force method
 a=[2,3,1,2,4,3]
 t=5

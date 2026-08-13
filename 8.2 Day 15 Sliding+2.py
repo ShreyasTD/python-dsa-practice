@@ -1,4 +1,5 @@
-"""l=0
+"""
+i=0
 r= len(a)-1
 maxA=0
 while l<r:
@@ -21,3 +22,29 @@ for i in range(len(s)//2):
 
         break
 print(isPali)
+
+#reverse a string without using [::] function
+str ="shreyas"
+rev=""
+for i in str:
+    rev=i+rev
+print(rev)
+
+#check if a string is palindrome 
+s="abaabaaba"
+isPalidrom=True
+for i in range(len(s)//2):
+    if s[i]!=s[len(s)-i-1]:
+        isPalidrom=False
+        break
+print(isPalidrom)
+#count number of vowels in a string
+str="string"
+vowels="aeiou"
+count =0
+
+for i in range (len(str)):
+    if str[i] in vowels:
+        count+=1
+
+print(count)
