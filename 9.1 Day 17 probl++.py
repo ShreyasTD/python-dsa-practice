@@ -10,17 +10,17 @@ for i in a:
 print(ans)
 
 
-def greet ():
+def greet (): # type: ignore
     print("hello")
 greet() 
 
 #parametter
-def greet(name):
+def greet(name): # type: ignore
     print("hello",name)
 
 greet('y')
 
-def add(a,b):
+def add(a,b): # type: ignore
     print(a+b)
 add(2,3)
 
@@ -30,7 +30,7 @@ def table(x):
         print(x,"x",i,"x",x*i)
 table(10)
 
-def add(a,b):
+def add(a,b): # type: ignore
     return a+b
 #result=add(10,39)
 #print(result)
