@@ -5,7 +5,7 @@ for i in range(1,len(a)):
 
 print(a)
 """
-#find the pivot element
+#find the pivot element index
 a=[1,2,3,2,3,4,5,6]
 for i in range(len(a)):
     leftSum=0
