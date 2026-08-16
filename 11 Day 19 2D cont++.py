@@ -1,5 +1,5 @@
 #1 create a function which returns the sum of primary diagonal elements on integer 2D list. for order of n
-def primaryDiagnalSum(a):
+def primaryDiagnalSum(a): # type: ignore
     total=0
     for i in range(len(a)):
        total+=a[i][i]
@@ -8,7 +8,7 @@ def primaryDiagnalSum(a):
 print(primaryDiagnalSum([[1,2,3],[4,5,6,],[7,8,9]]))
 
 #2 for n^2
-def primaryDiagnalSum(a):
+def primaryDiagnalSum(a): # type: ignore
     total=0
     for i in range(len(a)):
        for j in range(len(a[0])):
@@ -27,7 +27,7 @@ def primaryDiagnalSum(a):
 print(primaryDiagnalSum([[1,2,3],[4,5,6,],[7,8,9]]))
 
 #3 Rotate a matrix by 90 deg clockwise
-def rotateClockwise(a):
+def rotateClockwise(a): # type: ignore
     for i in range(len(a)):
         for j in range(i+1,len(a[0])):
             a[i][j],a[j][i]=a[j][i],a[i][j]
@@ -38,3 +38,21 @@ def rotateClockwise(a):
         print()
 
 rotateClockwise([[1,2,3],[4,5,6],[7,8,9]])
+
+
+#4. Print Anticlockwise rotation of a 2d
+
+def rotateClockwise(a):
+    for i in range(len(a)):
+        for j in range(i,len(a[0])):
+            a[i][j],a[j][i]=a[j][i],a[i][j]
+    
+    for i in range(len(a)-1,-1,-1):
+        for j in range(len(a[0])):
+            print(a[i][j],end=" ")
+        print()
+
+
+rotateClockwise([[1,2,3],[4,5,6],[7,8,9]])
+
+#5. Print spiral traversal of a matrix.
