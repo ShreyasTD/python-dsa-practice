@@ -9,6 +9,12 @@ for i in range (2,11,2):
 for i in range(100,1,-1):
     print(i)
 
-n=8
 for i in range(50,500): 
-    print(n*i)
+    print(i)
+
+
+fruits = ["Apple", "Banana", "Cherry"]
+
+for fruit in fruits:
+    print("I want to eat a:")
+    print(fruit)
