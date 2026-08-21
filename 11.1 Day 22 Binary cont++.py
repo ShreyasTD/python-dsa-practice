@@ -29,7 +29,7 @@ def ub(a,t):
 
 
 
-print(lb([1,2,3,3,4,5],4))
+print(lb([3,5,7,8,9],5))
 
 #create a function which returns the first and last ocurrence of a target in a list format 
 
