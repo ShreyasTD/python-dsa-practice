@@ -1,26 +1,6 @@
-a=[10,20,30,40,50,60]
-found=False
-for i in range (len(a)):
-    if a[i]==found:
-        found=True
-        break;
-print(a)
-"""
+
 #banarey serch
-a=[1,2,3,4,5,6,7,12,18,30]
-left=0
-right=len(a)-1
-found=False
-while left<=right:
-    mid=(left+right)/2
-    if a[mid]==target:
-        found=True
-        break
-    elif a[mid]>target:
-            right=mid-1
-    else:
-         left=mid+1
-"""
+
 #create a function which takes a sorted list and a target and returns a Boolean (T/F) if the target exist in the list.
 def bs(a,target):
     left=0
@@ -79,3 +59,8 @@ def lastOccurence(a,target):
 
 print(lastOccurence([1,2,3,3,3,3,3,4],3))
 
+#create a function which returns the index where a target should be inserted in a sorted list.
+
+#function parameters : a sorted list , target
+
+  

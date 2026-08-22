@@ -29,3 +29,6 @@ while leftBoundary<=rightBoundary and topBoundary<=bottomBoundary:
             print(a[i][leftBoundary],end=" ")
         direction="right"
         leftBoundary+=1
+
+    
+#create a function which returns the sum of primary and secondary diagonal of a 2d List (matrix)
