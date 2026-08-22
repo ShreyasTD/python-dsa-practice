@@ -38,3 +38,17 @@ print(lb([3,5,7,8,9],5))
 #find the minimum element in the rotated sorted list 
 #[4,5,1,2,3]
 
+def sum(arr,target):
+    left =0
+    right=len(arr)-1
+
+    while left <right:
+        if arr[left]+arr[right]==target:
+            return[left,right]
+        elif arr[left]+arr[right]<target:
+            left+=1
+        else:
+            right -=1
+    return[-1,-1]
+
+print(sum([1,2,3,4,5],4))
