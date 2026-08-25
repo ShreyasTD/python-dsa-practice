@@ -126,3 +126,12 @@ while True:
 
     # Control speed
     clock.tick(10)
+
+
+class Solution:
+    def missingMultiple(self, nums, k):
+        num_set = set(nums)
+        multiple = k
+        while multiple in num_set:
+            multiple += k
+        return multiple
