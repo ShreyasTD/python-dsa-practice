@@ -1,0 +1,50 @@
+class Solution:
+    def lexGreaterPermutation(self, s: str, target: str) -> str:
+        n = len(s)
+        counts = [0] * 26
+        for ch in s:
+            counts[ord(ch) - 97] += 1
+
+        M = 0
+        for i in range(n):
+            idx = ord(target[i]) - 97
+            if counts[idx] > 0:
+                counts[idx] -= 1
+                M += 1
+            else:
+                break
+
+        if M == n:
+            last_idx = ord(target[n - 1]) - 97
+            counts[last_idx] += 1
+            current_d = n - 1
+        else:
+            current_d = M
+
+        found = False
+        chosen_idx = -1
+
+        while current_d >= 0:
+            t_idx = ord(target[current_d]) - 97
+            for c in range(t_idx + 1, 26):
+                if counts[c] > 0:
+                    chosen_idx = c
+                    found = True
+                    break
+            if found:
+                break
+            if current_d == 0:
+                break
+            prev_idx = ord(target[current_d - 1]) - 97
+            counts[prev_idx] += 1
+            current_d -= 1
+
+        if not found:
+            return ""
+
+        counts[chosen_idx] -= 1
+        prefix = target[:current_d]
+        chosen_char = chr(chosen_idx + 97)
+        suffix = ''.join(chr(c + 97) * counts[c] for c in range(26) if counts[c] > 0)
+
+        return prefix + chosen_char + suffix
