@@ -19,3 +19,36 @@ if temp>20:
     print("it is warm")
 else:
      print("It is chilly")
+
+if [1,2,3]:      # empty list
+    print("ran 1")
+
+if "hello":      # empty string
+    print("ran 2")
+
+if 0:
+    print("ran 3")
+
+if None:
+    print("ran 4")
+
+a=10
+if a<=20:
+   print(a)
+else:
+   print(1)
+
+x = 5
+print(x> 10 and x < 20)
+
+x = 5
+if x > 10 and x < 100:
+    print("This won't print")
+
+x = 5
+if x > 10 and x < 100:
+    print("This won't print")
+
+colors = ["red", "blue"]
+if "green" not in colors:
+    print("Green isn't there")
