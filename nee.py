@@ -52,3 +52,15 @@ if x > 10 and x < 100:
 colors = ["red", "blue"]
 if "green" not in colors:
     print("Green isn't there")
+
+
+if []:
+    print("run 1")
+
+shop=47
+shop//=6
+#shop%=6
+print(shop)
+
+x=9
+print(x % 2 == 0)
