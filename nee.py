@@ -64,3 +64,32 @@ print(shop)
 
 x=9
 print(x % 2 == 0)
+
+x = 5
+y = x
+print(id(x))
+print(id(y)) 
+
+a = 10
+b = a
+a = 20
+print(a, b)
+
+age=12
+if age>18:
+    print("the ticket price is 250")
+else:
+   print("the ticket price is $100")
+   s = "  Python is fun  "
+
+a = s.strip()
+b = s.find("fun")
+c = "is" in s
+d = s.upper()
+print(s)
+print(a)
+print(b)
+print(c)
+print(d)
+s = "cat dog"
+print(s.find("dog"))
