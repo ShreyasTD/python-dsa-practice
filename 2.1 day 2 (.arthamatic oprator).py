@@ -1,3 +1,4 @@
+
 a1=int(input("Enter a 1st number: "))
 a2=int(input("Enter a 2nd number: "))
 
@@ -11,3 +12,9 @@ print("Exponentiation of two numbers is: ", a1**a2)
 print("Bitwise AND of two numbers is: ", a1&a2)
 print("Bitwise OR of two numbers is: ", a1|a2)
 print("Bitwise XOR of two numbers is: ", a1^a2)
+"""
+num=float(input("enter the number: "))
+print("the" ,num,"is a float")
+print(type(num))
+
+"""
