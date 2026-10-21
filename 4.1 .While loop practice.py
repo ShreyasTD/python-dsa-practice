@@ -1,3 +1,4 @@
+"""
 start=1
 while start<=10:
    #if start%2==0:
@@ -25,3 +26,13 @@ count=1
 while count<=4:
     print("iam a ninja")
     count=count+1
+"""
+
+result=0
+number=1
+while number<=100000:
+    if number%2==0:
+
+      result+=number
+    number+=1   
+print("the result is:", result)
