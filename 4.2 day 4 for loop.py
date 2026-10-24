@@ -57,6 +57,7 @@ for i in range(1,11):
     print(f"{table} x {i} = {table*i}")
 """
 """
+# all the multiples of 8 from 50 to 500
 for i in range(50,501):
     if i%8==0:
         print(i)
@@ -65,4 +66,4 @@ result=0
 for i in range(1,1001):
     if i%3==0 and i%5==0:
          result+=i
-print(result)
+print(result)   

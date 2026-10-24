@@ -48,9 +48,43 @@ for i in range(1,n+1):
         print(f"{i} x {j} = {i*j}")
     print()
 """
+"""
 #practice=8  
 n=int(input("Enter a number: "))
 for i in range(1,n+1):
     for j in range(1,i+1):
         print(j,end=" ")
+    print()
+
+"""
+
+#fact of number using for loop
+"""
+n=int(input("Enter a number: "))
+fact=1
+for i in range (1,n+1):
+    fact*=i
+print(fact)
+
+#using while loop
+
+n=int(input("Enter a number: "))
+fact=1
+i=1
+while i<=n:
+    fact*=i
+    i+=1
+print(fact)
+
+"""
+"""
+#Nested for loop
+for i in range(0,6):
+    for j in range(0,4):
+        print(i,j)
+"""
+input=int(input("Enter the number , which you want to print as the square pattern: "))
+for i in range(0,input):
+    for j in range(0,input):
+        print("*",end=" ")
     print()
