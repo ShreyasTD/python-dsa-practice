@@ -1,5 +1,5 @@
 {
-    "python.analysis.autoImportCompletions": false,
+    "python.analysis.autoImportCompletions": true,
     "python.analysis.languageServerMode": "default",
     "python.analysis.typeCheckingMode": "standard",
 
@@ -11,5 +11,14 @@
 
     "editor.suggestOnTriggerCharacters": true,
     "editor.inlineSuggest.enabled": true,
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
 }
