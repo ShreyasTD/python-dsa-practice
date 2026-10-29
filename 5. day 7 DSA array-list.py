@@ -63,10 +63,83 @@ for i in a[:]:
         a.remove(i)
 print(a)
 """
-
+"""
 s=[1,2,3,45,True]
 print(s)  #store the data in anyware
 
 a=[1,2,3,4,5,-4]
-print(a[-1])     # accesing the list by last element by last indexing 
-                     
+print(a[1])     # accesing the list by last element by last indexing
+"""
+"""
+a=[1,2,3,4,56,98]
+for i in range(1,6):
+    print(a[i])
+                                #using in 
+a=[1,2,3,4,5,6,8]
+for i in a:
+    print(i) 
+"""
+
+"""
+ab=[2,3,3,4,45,54,5]
+print(ab[-1])  
+"""
+"""
+v=[2,3,5,4,1]
+print(len(v))
+"""
+"""
+a=[1,2,3,4,1,323,]     #Modifing element
+a[5]=0
+print(a)
+"""
+"""
+b=[2,3,4,5,6,7,3,5,6,70]
+for i in range(len(b)):
+    if i%2==0:
+      b[i]=-1
+print(b)
+                                """
+"""                            
+a=[1,2,3,4,5,7]
+a.append(7)
+print(a)
+"""
+"""
+a = []
+for i in range(10):
+    num = int(input(f"Enter the number {i + 1}: "))     # f means dynamic data present in the set
+    a.append(num)
+
+print(a)
+"""
+"""
+list = []
+result = 0
+for i in range(10):
+    user_input = int(input(f"Enter a number {i+1}: "))
+    list.append(user_input)
+for i in range(len(list)):
+    result += list[i]
+print("The sum of all elements in the list is:", result)
+"""
+"""
+a=[3,4,5,6,6]
+a.insert(3,100)
+print(a)
+"""
+"""
+l=[9, 6,45, 6]
+l.pop()
+print(  l   )
+"""
+"""
+d=[9,40,50,6]
+d.remove(50)
+print(d)
+"""
+a=[1,2,3,4,5,6,7,8,9,10]
+for i in a[:]:
+    if i%5==0:
+        a.remove(i)
+print(a)
