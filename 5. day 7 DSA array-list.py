@@ -138,7 +138,56 @@ d=[9,40,50,6]
 d.remove(50)
 print(d)
 """
+"""
 a=[1,2,3,4,5,6,7,8,9,10]
+for i in a[:]:
+    if i%5==0:
+        a.remove(i)
+print(a)
+"""
+"""
+a=[2,3,"dsfdf",True,5.4]
+for i in range(0,5):
+    print(a[i],end=" ")
+print()
+    
+f=[3,4,2,1,3,5,8,7]
+for i in f:
+    print(i)
+    
+g=[4,5,3,]
+print(len(g))
+
+h=[2,4,5,3,1,35,1,3,5,6,2,7]
+for i in range(len(h)):
+    if i%2==0:
+        h[i]=-1
+print(h)
+
+
+dd=[]
+result=0
+for i in range(10):
+    num=int(input(f"Enter the number the which you want{i+1}: "))
+    dd.append(num)
+  
+for i in range(len(dd)):
+        result+=dd[1]
+print(dd)
+print("Sum of the result is : ",result)
+"""
+
+l=[9, 6,45, 6,8,9,4]
+l.pop()
+print(  l   )
+
+a=[1,2,3,4,5,7]
+a.append(7)
+print(a)
+a.pop()
+print
+
+a=[1,2,3,4,5,7]
 for i in a[:]:
     if i%5==0:
         a.remove(i)
