@@ -1,3 +1,4 @@
+"""
 #finding index
 a=[10,20,30,40,50,60]
 for i in range(len(a)):
@@ -12,7 +13,8 @@ print(a)
 
 #3 reversing list in descending order
 a=[1,2,3,4,50,90,-20]
-a.sort(reverse=True)
+a.s
+ort(reverse=True)
 print(a)
 
 #4 reversing list
@@ -91,3 +93,11 @@ b=[]
 for i in range(len(a)-1, -1, -1):
     b.append(a[i])
 print(b)
+"""
+
+
+d=[2,3,4,5,566,56]
+for i in range(len(d)):
+   if d[i]==5:
+    print(d)
+    

@@ -185,7 +185,7 @@ a=[1,2,3,4,5,7]
 a.append(7)
 print(a)
 a.pop()
-print
+print(a)
 
 a=[1,2,3,4,5,7]
 for i in a[:]:
