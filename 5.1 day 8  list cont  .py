@@ -96,8 +96,24 @@ print(b)
 """
 
 
-d=[2,3,4,5,566,56]
-for i in range(len(d)):
-   if d[i]==5:
-    print(d)
-    
+"""
+a=[3,4,5,6,2,6,8,3,5,6]
+for i in range(len(a)):
+    if a[i]==6:
+        print(i)
+        break
+        """
+"""        
+a=[3,4,5,6,7,4,2]
+a.sort(reverse=False)
+print(a)
+"""
+"""
+a=[3,4,5,6,9]
+a.reverse()
+print(a)
+"""
+
+d=[6,3,6,4,3,2,5]
+b=d[1:4]
+print(b)
