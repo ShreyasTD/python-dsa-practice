@@ -13,8 +13,8 @@ print(a)
 
 #3 reversing list in descending order
 a=[1,2,3,4,50,90,-20]
-a.s
-ort(reverse=True)
+
+a.reverse=True
 print(a)
 
 #4 reversing list
@@ -113,7 +113,59 @@ a=[3,4,5,6,9]
 a.reverse()
 print(a)
 """
-
+"""
 d=[6,3,6,4,3,2,5]
 b=d[1:4]
 print(b)
+
+a=[3,4,5,6,3,2,7,8]
+for i in range(len(a)):
+    if a[i]==6:
+     print(i)
+     break
+a=list(map(int,input().split()))   # taken n number of list
+print(a)
+"""
+
+"""
+# add all even number
+a=list(map(int,input().split()))    # assign the every element as the int function or what ever taken the list to inistilize
+result=0
+for i in a:
+    if i%2==0:
+     result=result+i
+print(result)
+"""
+a = list(map(int, input().split()))
+maxEle=-1
+for i in a:
+    if i>maxEle:
+        maxEle=i
+print(maxEle)
+
+
+a = list(map(int, input().split()))
+minEle=10**10
+for i in a:
+    if i<minEle:
+        minEle=i
+print(minEle)
+
+a = list(map(int, input().split()))
+for i in range(len(a)-1, -1, -1):
+    print(a[i], end=" ")
+
+a = list(map(int, input().split()))
+x=int(input("enter the number to find frequency: "))
+count=0
+for i in a:
+    if i==x:
+        count+=1
+print(count)
+
+a = list(map(int, input().split()))
+b=[]
+for i in range(len(a)-1, -1, -1):
+    b.append(a[i])
+print(b)
+
