@@ -1,4 +1,4 @@
-count = 0
+"""count = 0
 while count < 3:
     print("Looping...")
     count = count +1
@@ -81,7 +81,7 @@ if age>18:
 else:
    print("the ticket price is $100")
    s = "  Python is fun  "
-
+s=["Python", "is", "fun"]
 a = s.strip()
 b = s.find("fun")
 c = "is" in s
@@ -93,3 +93,5 @@ print(c)
 print(d)
 s = "cat dog"
 print(s.find("dog"))
+
+"""
