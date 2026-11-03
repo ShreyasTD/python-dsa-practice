@@ -1,4 +1,4 @@
-#1 selection sort
+"""#1 selection sort
 a=[1,2,3,4,50,90,-20]
 for i in range (len(a)):
     minI=i
@@ -88,3 +88,40 @@ c=a+b
 print(c)
 c.sort()
 print(c)
+"""
+#selection sort
+s=[2,1,3,4,5,12,5,6,7,8,9]
+for i in range(len(s)):
+    minI=i
+    for j in range(i+1, len(s)):
+        if s[j]<s[minI]:
+            minI=j
+    s[i],s[minI]=s[minI],s[i]
+print(s)
+
+
+#bubble sort
+s=[10,1,3,4,5,12,5,6,7,8,9]
+for i in range(len(s)):
+    for j in range(len(s)-i-1):
+        if s[j]>s[j+1]:
+            s[j],s[j+1]=s[j+1],s[j]
+print(s)
+
+s=[10,1,3,4,5,12,5,6,7,8,9]
+for i in range(len(s)-1, -1, -1):
+    print(s[i])
+    
+#mearge two sorted lists
+g=[1,2,3,4,5,6]
+h=[2,3,4,5,6,7]
+merged = []
+i, j = 0, 0
+while i < len(g) and j < len(h):
+    if g[i] < h[j]:
+        merged.append(g[i])
+        i += 1
+    else:
+        merged.append(h[j])
+        j += 1
+print(merged)
