@@ -114,8 +114,10 @@ for fast in range(len(a)):
      slow+=1
 print(a)
 """
+"""
 #find thw maximum sum of a subarray of size k
 from ctypes import windll
+import re
 
 
 a=[1,2,8,4,9,6]
@@ -167,3 +169,15 @@ for right in range(len(a)):
         current_sum-=a[left]
         left+=1
 print(min_length)
+
+"""
+a=[2,3,1,2,4,3]
+t=7
+res=float('inf')
+for i in range(len(a)):
+   subArraySum=0
+   for j in range(i,len(a)):
+       subArraySum+=a[j]
+       if subArraySum>=t:
+             res=min(res,j-i+1)
+print(res )
