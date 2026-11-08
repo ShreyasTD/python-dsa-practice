@@ -115,7 +115,10 @@ for fast in range(len(a)):
 print(a)
 """
 #find thw maximum sum of a subarray of size k
-a=[1,2,3,4,5,6,7,8,9]
+from ctypes import windll
+
+
+a=[1,2,8,4,9,6]
 k=3
 max_sum=0
 for i in range(len(a)-k+1):
@@ -124,3 +127,43 @@ for i in range(len(a)-k+1):
         current_sum+=a[j]
     max_sum=max(max_sum,current_sum)
 print(max_sum)
+
+a=[1,2,8,4,9,6]
+k=3
+#SUM of first k elements
+windowSum=0
+for i in range(k):
+    windowSum+=a[i]
+ans=windowSum
+for i in range(k,len(a)):
+    newWindowSum=windowSum-a[i-k]+a[i]
+    windowSum=newWindowSum
+    ans=max(ans,newWindowSum)
+print(ans)
+
+#find the maximum sum of a subarray of size k
+a=[1,2,8,4,9,6]
+k=4
+windowSum=0
+for i in range(k):
+    windowSum+=a[i]
+    ans=windowSum
+for i in range(k,len(a)):
+    newWindowSum=windowSum-a[i-k]+a[i]
+    windowSum=newWindowSum
+    ans=max(ans,newWindowSum/k)
+print(ans)
+
+#find the length of smallest subarray with Sum>=target
+a=[2,1,5,2,3,2]
+target=7
+left=0
+current_sum=0
+min_length=float('inf')
+for right in range(len(a)):
+    current_sum+=a[right]
+    while current_sum>=target:
+        min_length=min(min_length,right-left+1)
+        current_sum-=a[left]
+        left+=1
+print(min_length)
