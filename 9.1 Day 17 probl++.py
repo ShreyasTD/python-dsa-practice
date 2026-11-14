@@ -1,5 +1,5 @@
 #Find the maximum sum of a subarray in a integer list kadan's algo
-a=[1,2,3,4,5,6,-17,8,9,10]
+"""a=[1,2,3,4,5,6,-17,8,9,10]
 ans=a[0]
 subArraySum=0
 for i in a:
@@ -69,3 +69,47 @@ def bubbleSort(a):
                 a[j+1],a[j]=a[j],a[j+1]
     return a
 print(bubbleSort([2,3,1,4,2]))
+
+
+"""
+"""
+#Find the maximum sum of a subarray in a integer list kadan's algo
+a=[1,2,3,4,5,6,-17,8,9,10]
+ans=a[0]
+subArraySum=0
+for i in a:
+    subArraySum+=i
+    ans=max(ans,subArraySum)
+    if subArraySum<=0:
+        subArraySum=0
+print(ans)
+"""
+"""
+#kadan's algorithm
+a=[1,2,3,4,5,6,-17,8,9,10]
+ans=a[0]
+subArraySum=0
+for i in a:
+    subArraySum+=i
+    ans=max(ans,subArraySum)
+    if subArraySum<=0:
+        subArraySum=0
+print(ans) 
+"""
+def name (shreyas): # type: ignore
+    print("hello",shreyas)
+name("shreyas")
+name("john")
+
+def add(a,b): # type: ignore
+    print(a+b)
+add(2,3)
+add(10,20)
+add(100,200)
+
+#create a function which prints multiplication table of the number which is getting passed in the function as Parameter
+inputNum=int(input("enter a number for which you want to print the table: "))
+def table(x):
+    for i in range(1,11):
+        print(x,"x",i,"=",x*i)
+table(inputNum)
