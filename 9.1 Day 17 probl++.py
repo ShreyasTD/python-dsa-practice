@@ -96,6 +96,8 @@ for i in a:
         subArraySum=0
 print(ans) 
 """
+
+"""
 def name (shreyas): # type: ignore
     print("hello",shreyas)
 name("shreyas")
@@ -113,3 +115,42 @@ def table(x):
     for i in range(1,11):
         print(x,"x",i,"=",x*i)
 table(inputNum)
+"""
+def add(a,b): # type: ignore
+    return "i will not return the sum"
+           #a+b 
+print(add(2,3))
+#result=add(10,39)
+#print(result)
+
+#Create a function which returns the avg of a list passed as a parameter
+def average(a):
+    return sum(a)/len(a)
+print(average([1,2,3,4]))
+
+x=10
+def scopeTest():
+    x=10
+    print(x)
+scopeTest()
+print(x)
+
+def greet(name="Default user"):
+    print("hello",name)
+greet("shreyas")
+greet()
+
+#create a function to find max in a list
+def maximum(a):
+    return max(a)
+numbers=[2,4,5,3,7,9]
+print(maximum(numbers))
+
+#create Bubble sort function and return the sorted list from it.
+def bubbleSort(a):
+    for i in range(len(a)):
+        for j in range(len(a)-i-1):
+            if a[j+1]<a[j]:
+                a[j+1],a[j]=a[j],a[j+1]
+    return a
+print(bubbleSort([2,3,1,4,2]))
