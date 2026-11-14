@@ -5,6 +5,7 @@ for i in range(1,len(a)):
 
 print(a)
 """
+"""
 #find the pivot element index
 a=[1,2,3,2,3,4,5,6]
 for i in range(len(a)):
@@ -17,6 +18,7 @@ for i in range(len(a)):
     if leftSum==rightSum:
         print(i)
 """
+"""
 #find frequency of every element in an int list.
 a=[1,2,1,3,4,2,3,4,1]
 freq={}
@@ -28,3 +30,9 @@ for i in range(len(a)):
 
 print(freq)
 """
+
+#prifix sum array
+a=[1,2,3,4,5]
+for i in range(1,len(a)):
+    a[i]+=a[i-1]
+print(a)
