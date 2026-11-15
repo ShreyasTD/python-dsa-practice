@@ -1,3 +1,4 @@
+"""
 #1
 
 matrix=[
@@ -109,3 +110,21 @@ for i in range(len(a)):
         if j==order -(i+1):
             total+=a[i][j]
 print(total)
+
+"""
+matrix=[[1,2,3],[1,2,3],[1,2,3]]
+print(matrix[0][1])
+
+matrix=[[1,2,3],[3,2,4],[4,5,7]]
+for row in matrix:
+    for ele in row:
+        print(ele, end=" ")
+    print()
+    
+matrix=[[1,2,3],[1,2,3],[1,2,3]]
+
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        print(matrix[i][j],end=" ")
+    print()
+        
