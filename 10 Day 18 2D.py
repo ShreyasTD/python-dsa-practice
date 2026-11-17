@@ -58,7 +58,7 @@ for i in range(len(matrix)):
     rowSum=0
     for j in range(len(matrix[0])):
         rowSum+=matrix[i][j]
-    print(rowSum) 
+    print(rowSum)
 
 # 7. print sum of every column of a 2d list
 
@@ -99,7 +99,7 @@ for i in range(len(a)):
 
 print(total)
 
-#10 
+#10
 a=[[1,2,3],[4,10,6],[7,8,9]]
 
 total=0
@@ -112,19 +112,50 @@ for i in range(len(a)):
 print(total)
 
 """
-matrix=[[1,2,3],[1,2,3],[1,2,3]]
-print(matrix[0][1])
 
-matrix=[[1,2,3],[3,2,4],[4,5,7]]
+"""
+matrix = [[4, 5, 6], [4, 7, 6], [7, 3, 9]]
+print(matrix[0][2])
+
+
+matrix = [[4, 5, 6], [6, 3, 2], [7, 3, 2]]
 for row in matrix:
-    for ele in row:
-        print(ele, end=" ")
+    for element in row:
+        print(element, end=" ")
     print()
-    
-matrix=[[1,2,3],[1,2,3],[1,2,3]]
 
+matrix = [[4, 5, 6], [6, 3, 2], [7, 3, 2]]
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
-        print(matrix[i][j],end=" ")
+        print(matrix[i][j], end=" ")
     print()
-        
+"""
+# take any 2d list
+from unittest import result
+
+
+matrix = [[1, 8, 2], [9, 3, 3], [5, 3, 7]]
+sum = 0
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])):
+        sum += matrix[i][j]
+print(sum)
+
+
+#create a function which returns maximum c=element of a 2d list passes as a n argument 
+def maximumInlist(a):
+    maxelemet=float('ind')
+    for row in a:
+        for col in row:
+            maxelemet=max
+            
+        return maxelemet
+    result=maximumInlist([[1,2,3],[4,7,4],[2,7,8]])
+    
+#print sum of evey row
+a=[[2,4,2],[5,2,7],[7,4,8]]
+for i in range(len(a)):
+    sum=0
+    for j in range(len(a[0])):
+        sum+=a[i][j]
+    print(sum)
