@@ -152,7 +152,8 @@ def maximumInlist(a):
             
         return maxelemet
     result=maximumInlist([[1,2,3],[4,7,4],[2,7,8]])
- """   
+ """  
+""" 
 #print sum of evey row
 a=[[2,4,2],[5,2,7],[7,4,8]]
 for i in range(len(a)):
@@ -175,3 +176,39 @@ for j in range(len(matrix[0])):
         colSum+=matrix[i][j]
 
     print(colSum)
+    
+
+#.create a function which returns the number of even numbers in a 2d list.
+def findEven(aList):
+    evenCounter =0
+    for row in aList:
+        for ele in row :
+            if ele%2==0:
+                evenCounter+=1
+    return evenCounter
+print(findEven([[1,2,3],[3,7,8]]))
+
+"""
+#9.find the main diagonal sum of a square matrix
+a=[[1,2,3,8],[4,10,6,8],[7,8,9,6],[6,8,5,7]]
+
+total=0
+
+order = 4
+
+for i in range(len(a)):
+
+    total+=a[i][order - (i + 1)]
+
+print(total)
+
+a=[[1,2,3],[4,10,6],[7,8,9]]
+
+total=0
+
+order = 3
+for i in range(len(a)):
+    for j in range(len(a[0])):
+        if j==order -(i+1):
+            total+=a[i][j]
+print(total)
