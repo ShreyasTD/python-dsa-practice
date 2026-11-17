@@ -130,6 +130,7 @@ for i in range(len(matrix)):
         print(matrix[i][j], end=" ")
     print()
 """
+"""
 # take any 2d list
 from unittest import result
 
@@ -151,7 +152,7 @@ def maximumInlist(a):
             
         return maxelemet
     result=maximumInlist([[1,2,3],[4,7,4],[2,7,8]])
-    
+ """   
 #print sum of evey row
 a=[[2,4,2],[5,2,7],[7,4,8]]
 for i in range(len(a)):
@@ -159,3 +160,18 @@ for i in range(len(a)):
     for j in range(len(a[0])):
         sum+=a[i][j]
     print(sum)
+    
+#print sum of evry column of 2d list
+matrix=[[1,2,3],[4,5,6],[7,8,9]]
+
+total=0
+
+for j in range(len(matrix[0])):
+
+    colSum=0
+
+    for i in range(len(matrix)):
+
+        colSum+=matrix[i][j]
+
+    print(colSum)
