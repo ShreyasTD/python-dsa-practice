@@ -54,4 +54,4 @@ def sum(arr, target):
     return [-1, -1]
 
 
-print(sum([4, 5, 1, 2, 3], 4))
+print(sum([4, 5, 1, 2, 3], 6))
